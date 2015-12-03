@@ -6,6 +6,13 @@
 	<script src="js/pricing_lib.js"></script>
 
 	<script>
+	/**
+	 * This fetches the test data from the test UI and calls the pricing 
+	 * library method to determine the markup price and then displays that
+	 * price in the test UI.
+	 *
+	 * @returns {null}
+	 */
 	function doCalculation(){
 
 		var objBasePrice = document.getElementById('inpBasePrice');
@@ -28,7 +35,8 @@
 		else {
 			objAnswer.innerHTML = 'ERROR: '+strErrorMsg;	
 		}
-
+		
+		return;
 	}
 	</script>
   
