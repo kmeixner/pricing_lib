@@ -31,8 +31,8 @@ objPricingLib.calculateRate(1299.99, 'food', 3);
 
 Where: 
 
-1299.99 := the base price,
-'food' := the sector,
+1299.99 := the base price,  
+'food' := the sector,  
 3 := the number of people
 
 
