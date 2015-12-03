@@ -22,12 +22,19 @@ on my website [here](http://kevinmeixner.com/pricing_lib/) )
 Options:
 
 1. Use the HTML5 UI provided by index.html to test.
-2. Open up the index.html page in Chrome, open up the development console and then test through the console:
+2. Open up the index.html page in Chrome, open up the development console and then test through the console by typing code similar to the following:
 
 ```
 var objPricingLib = new PricingLib();
-objPricingLib.calculateRate(1299.99, 3, 'food');
+objPricingLib.calculateRate(1299.99, 'food', 3);
 ```
+
+Where: 
+
+1299.99 := the base price,
+'food' := the sector,
+3 := the number of people
+
 
 
 
