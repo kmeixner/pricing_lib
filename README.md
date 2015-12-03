@@ -12,12 +12,12 @@
 
 * Copy all the files in this repository to a folder on your web server that you can access with your browser.
 
-**How to Access the Applicatoin:**
+**How to Access the Application:**
 
 * Navigate to the URL where you installed the files on your web browser (or optionally you can navigate to a working version of this application 
 on my website [here](http://kevinmeixner.com/pricing_lib/) )
 
-**How to Use the Applicatoin:**
+**How to Use the Application:**
 
 Options:
 
@@ -34,6 +34,12 @@ Where:
 1299.99 := the base price,  
 'food' := the sector,  
 3 := the number of people
+
+**Unit-testing with JSUnit**
+
+* Navigate to the jsunit/testRunner.html subdirectory with your web browser, eg: [http://kevinmeixner.com/pricing_lib/jsunit/testRunner.html](http://kevinmeixner.com/pricing_lib/jsunit/testRunner.html)
+* Type in the URL to the test.html file, eg: [http://kevinmeixner.com/pricing_lib/jsunit/test.html](http://kevinmeixner.com/pricing_lib/jsunit/test.html)
+* Click the [Run] button
 
 
 
