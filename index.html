@@ -4,27 +4,39 @@
 	<meta charset="windows-1252">  
 	<title>Pricing Demo Test Page</title>
 	<script src="js/pricing_lib.js"></script>
-	<script src="js/testui.js"></script>	
+	<script src="js/testui.js"></script>
+	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
 <h1>Price Lib Test Page</h1>
 
-<label>Base Price:</label>
-<input id="inpBasePrice" name="inpBasePrice" type="number" /><br />
+<div class="container">
 
-<label>Number of People:</label>
-<input id="inpNumPeople" name="inpNumPeople" type="number" /><br />
+	<div class="row">
+		<div class="cell"><label>Base Price:</label></div>
+		<div class="cell"><input id="inpBasePrice" name="inpBasePrice" type="number" /></div>
+	</div>
+	
+	<div class="row">
+		<div class="cell"><label>Number of People:</label></div>
+		<div class="cell"><input id="inpNumPeople" name="inpNumPeople" type="number" /></div>
+	</div>
 
-<label>Sector:</label>
-<select id="inpSector" name="inpSector">
-	<option value='electronics'>Electronics</option>
-	<option value='food'>Food</option>
-	<option value='other' selected="selected">Other</option>	
-	<option value='pharmaceuticals'>Pharmaceuticals</option>
-	<option value='testinvalidsector'>Test Invalid Sector</option>	
-</select>
-<br />
+	<div class="row">
+		<div class="cell"><label>Sector:</label></div>
+		<div class="cell">
+			<select id="inpSector" name="inpSector">
+				<option value='electronics'>Electronics</option>
+				<option value='food'>Food</option>
+				<option value='other' selected="selected">Other</option>	
+				<option value='pharmaceuticals'>Pharmaceuticals</option>
+				<option value='testinvalidsector'>Test Invalid Sector</option>	
+			</select>
+		</div>
+	</div>		
+
+</div>
 
 <input type="button" value="Calculate Rate" onclick="doCalculation();" />
 
