@@ -1,6 +1,8 @@
 /** 
 * @class PricingLib
 * 
+* @desc
+*
 * This class provides methods to calculate pricing rates.
 */
 function PricingLib() {
