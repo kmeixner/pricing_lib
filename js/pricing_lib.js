@@ -51,6 +51,10 @@ function PricingLib() {
 	// *** METHODS ***:	
 	
 	/**
+	 * @method getRateDictionary
+	 *
+	 * @desc
+	 *
 	 * Returns the rate dictionary:
 	 *
 	 * Dictionary Format:
@@ -74,6 +78,10 @@ function PricingLib() {
 	}
 	
 	/**
+	 * @method getErrorMessage
+	 *	
+	 * @desc
+	 *	 
 	 * Returns the error message string if an error has occurred.
 	 * Returns nulstring ("") if no error has occurred.
 	 *
@@ -84,6 +92,10 @@ function PricingLib() {
 	}
 	
 	/**
+	 * @method getRateForSector
+	 *	
+	 * @desc
+	 *	 
 	 * Returns the rate for the given sector;
 	 *
 	 * @param {String} sector: 'pharmaceuticals'|'food'|'electronics'|'other'
@@ -105,6 +117,10 @@ function PricingLib() {
 	}
 	
 	/**
+	 * @method calculateRate
+	 *		
+	 * @desc
+	 *	 
 	 * This calculates the markup rate given the base price, sector and number
 	 * of people assigned to work on the job.
 	 *

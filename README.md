@@ -41,6 +41,10 @@ Where:
 * Type in the URL to the test.html file, eg: [http://kevinmeixner.com/pricing_lib/jsunit/test.html](http://kevinmeixner.com/pricing_lib/jsunit/test.html)
 * Click the [Run] button
 
+**Other**
+
+* the 'docs' sub-folder contains experiemental auto-generated documentation from the source code using [JSDoc](http://usejsdoc.org/), eg: [http://kevinmeixner.com/pricing_lib/docs/](http://kevinmeixner.com/pricing_lib/docs/)
+
 
 
 
