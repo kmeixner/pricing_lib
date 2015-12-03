@@ -10,22 +10,20 @@
 
 		var objBasePrice = document.getElementById('inpBasePrice');
 		var nBasePrice = objBasePrice.value-0; // -0 to cast into number
-		console.debug('nBasePrice='+nBasePrice);
 		
 		var objNumPeople = document.getElementById('inpNumPeople');
 		var nNumPeople = objNumPeople.value-0; // -0 to cast into number
-		console.debug('nNumPeople='+nNumPeople);
 
 		var objSector = document.getElementById('inpSector');
 		var strSector = objSector.value;	
-		console.debug('strSector='+strSector);	
 		
-		var nCalculatedPrice = calculateRate(nBasePrice, strSector, nNumPeople);
+		var objPricingLib = new PricingLib();
+		var nCalculatedPrice = objPricingLib.calculateRate(nBasePrice, strSector, nNumPeople);
 		
 		var objAnswer = document.getElementById('answer');
 		
 		if (false !== nCalculatedPrice) {
-			objAnswer.innerHTML = nCalculatedPrice;
+			objAnswer.innerHTML = '$'+nCalculatedPrice;
 		}
 		else {
 			objAnswer.innerHTML = 'ERROR: '+strErrorMsg;	
