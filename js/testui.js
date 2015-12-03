@@ -22,7 +22,7 @@ function doCalculation(){
 	var objAnswer = document.getElementById('answer');
 	
 	if (false !== nCalculatedPrice) {
-		objAnswer.innerHTML = '$'+nCalculatedPrice;
+		objAnswer.innerHTML = 'Markup Price: $'+nCalculatedPrice;
 	}
 	else {
 		objAnswer.innerHTML = 'ERROR: '+strErrorMsg;	
