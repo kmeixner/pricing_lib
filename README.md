@@ -22,7 +22,7 @@ on my website [here](http://kevinmeixner.com/pricing_lib/) )
 Options:
 
 1. Use the HTML5 UI provided by index.html to test.
-2. Open up the index.html page in Chrome, open up the development console and then test through the console by typing code similar to the following:
+2. Open up the index.html page in the Chrome web browser, open up the development console and then test through the console by typing code similar to the following:
 
 ```
 var objPricingLib = new PricingLib();
