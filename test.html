@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="windows-1252">  
+	<title>Pricing Demo Unit Test Page</title>
+	<script src="jsunit/app/jsUnitCore.js"></script>	
+	<script src="js/pricing_lib.js"></script>
+
+<script>
+var objPricingLib = new PricingLib();
+
+function testPricingLibExists() {
+	assertNotNull("", objPricingLib);
+}
+
+function testNoErrorAtStart() {
+	assertEquals("", "", objPricingLib.getErrorMessage());
+}
+
+function testGetRateDictionary() {
+	assertNotNull("", objPricingLib.getRateDictionary());
+}
+
+function testValidSectors() {
+	assertNotEquals("", false, objPricingLib.getRateForSector('electronics'));
+	assertNotEquals("", false, objPricingLib.getRateForSector('food'));
+	assertNotEquals("", false, objPricingLib.getRateForSector('pharmaceuticals'));
+	assertNotEquals("", false, objPricingLib.getRateForSector('other'));	
+}
+
+function testInvalidSector() {
+	assertFalse("", objPricingLib.getRateForSector('unsupportedsectorblahblah'));
+}
+
+function testCalculateParams() {
+	assertFalse("", objPricingLib.calculateRate(null,'food',3));
+	assertFalse("", objPricingLib.calculateRate(1299.99,null,3));
+	assertFalse("", objPricingLib.calculateRate(1299.99,'food',0));
+	assertFalse("", objPricingLib.calculateRate(1299.99,'food',-1));	
+	assertFalse("", objPricingLib.calculateRate(1299.99,'unsupportedsectorfooblah',3));	
+}
+
+function testSampleValues() {
+	assertEquals("", 1591.58, objPricingLib.calculateRate(1299.99,'food',3));
+	assertEquals("", 6199.81, objPricingLib.calculateRate(5432.00,'pharmaceuticals',1));
+	assertEquals("", 13707.63, objPricingLib.calculateRate(12456.95,'other',4));	
+}
+
+</script>
+	
+</head>
+<body>
+
+<h1>Pricing Demo Unit Test Page</h1>
+
+</body>
+</html>
